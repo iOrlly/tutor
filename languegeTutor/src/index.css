@@ -1,0 +1,49 @@
+:root {
+    --main-color: #121212;
+    --butto-color:#4CAF50;
+    --text-color: #fff;
+    --background-color: #1e1e1e;
+    --sidebar-width: min(320px, 92vw);
+    --sidebar-gap: 1.25rem;
+}
+
+body {
+    font-family: Arial;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    justify-content: center;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+body.historico-aberto main {
+    padding-right: calc(var(--sidebar-width) + var(--sidebar-gap));
+}
+
+main {
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-right: 0;
+    transition: padding-right 0.3s ease-in-out;
+}
+
+button {
+    width: 10em;
+    padding: 10px;
+    background: var(--butto-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.result-status {
+    min-height: 1.25em;
+    margin: 0 0 8px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.result-status:empty {
+    display: none;
+}
