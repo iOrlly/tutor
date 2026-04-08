@@ -1,4 +1,4 @@
-import Box from '../components/box'
+import Box from '../components/Box.tsx'
 
 function Home() {
     return(

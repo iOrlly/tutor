@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './box.css'
 
 function Box() {
     const [text, setText] = useState("")
